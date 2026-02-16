@@ -1,6 +1,10 @@
-# Ignore platform-specific C++ folders from language stats
-android/* linguist-vendored
-ios/* linguist-vendored
-windows/* linguist-vendored
-linux/* linguist-vendored
-macos/* linguist-vendored
+ # Force everything in lib to be recognized as Dart
+lib/**/*.dart linguist-detectable
+lib/**/*.dart linguist-language=Dart
+
+# Forcefully ignore the platform folders
+android/** linguist-vendored
+ios/** linguist-vendored
+windows/** linguist-vendored
+linux/** linguist-vendored
+macos/** linguist-vendored
